@@ -1,0 +1,112 @@
+<!-----------------------------------------------------Membres du groupe------------------------------------------------------->
+<!------------------------------------------------Bonheur Ibrahimu Tutu Kyona-------------------------------------------------->
+<!--------------------------------------------------Pindi Winner Mazonzika----------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"><!--J'importe la police Montserrat-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet"><!--Police Yatra-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"><!--Police Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"><!--Police Poppins-->
+    <title>Index</title>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv0C3UMlUhyLlkv97wu6ZyvlbQM5SUpWI&callback=initMap"></script>        
+</head>
+<body>
+    <!--Haut de page-->
+    <header>
+        <image alt="logo UQTR" src="2.jpg" width="150"></image>
+        <p>Loisir pour les étudiants</p>
+
+    </header>
+
+    <!--Menu de navigation-->
+    <nav>
+            <ul>
+                <!--Deux premières listes ont une classe hover, qui me permettra de porter mes
+                    modifications css sans pour autant affecter la troisième liste
+                -->
+                <li class="hover" id="Accueil">Accueil</li>
+                <li class="hover" id="inscrire">S'inscrire</li>
+                <!-- Troisième liste border, qui me permettra de porter mes modifications css sans pour autant affecter les deux premières-->
+                <li class="hover" id="Carte">Carte</li>
+            </ul>
+        </nav>  
+
+    <!--Contenue-->
+    <section>
+
+       <div id="contenu">
+        <h1>Notre but : </h1>
+        <p>Notre site propose aux étudiants désireux de réaliser une ou plusieurs activité de loisir derejoindre les différentes activités proposées dans la liste suivante en 3 étapes :</p>
+        <ul>
+            <li>S'incrire</li>
+            <li>Choisir une ou plusieurs activité</li>
+            <li>Commencer les activités en groupe  </li>
+        </ul>
+        
+            <p  style="border-left:3px double green;padding: 10px 10px;">Les différentes activités des groupes sont sous la responsabilité de professionnelles. Il s'agit des passionnés du domaine qui vous feront découvrir des plans inédits de vos loisirs preférés. Qu'attendez-vous...? Rejoignez-nous !</p>
+        
+        <h1>Liste des activités disponibles </h1>
+        <table class="tableau-style" id="table">
+            <tr id="notRemove">
+                <th id="number">#</th>
+                <th id="acti">Activité</th>
+                <th id="respo">Responsable</th>
+                <th id="activity">Nombre d'activités</th>
+            </tr>
+
+        </table>
+                <p style="background-color:rgba(0,128,0,.5);border-left:7px double green; padding: 10px 10px;outline:none;cursor: pointer;" id="remplir">Remplir le Tableau</p>
+            <p style="background-color:rgba(255,0,0,.5);border-left:7px double red; padding: 10px 10px;outline:none;cursor: pointer;" id="effacer">Effacer le Tableau</p>
+</div>
+
+            <div id="formulaire">
+        
+            
+
+            <form method="POST" action="javascript:console.log() );">
+            <p>inscrivez vous</p>
+            <p>Nom  <input type="text" id="text" placeholder="" size="50" class ="vide" value=""> </p>
+            <p>Prenom  <input type="text" id="prenom" placeholder="" class ="vide" size="50"value=""> </p>
+            <p>Date de naissance  <input type="date" > </p>
+            <p>Sexe <input type="radio" name="check" value="homme" checked>Homme <input type="radio" name="check" value="genre">Femme </p>
+            <p>Activite :
+                <select id="activite">
+                    <option value="champ_vide">Choisir une activité</option>
+                    <option value="Natation">Natation</option>
+                    <option value="Randonnée">Randonnée</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Echec">Echec</option>
+                    <option value="Vélo">Vélo</option>
+                    <option value="Kayak">Kayak</option>
+                </select>
+            </p>
+            <p>Motivation <input type="text" size="50" id="mention" placeholder=""> </p>
+            <p><input type="submit" value="Valider" id="Valider">
+             <input type="reset" value="Réinitialiser" id="Reset"> </p>
+            </form>
+            <span id="after_verification"></span><br>
+            <span id="after_verification_msg"></span>
+        </div>
+ <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5508.305671979445!2d-72.577866!3d46.346511!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36f5dd28a30395a8!2zVW5pdmVyc2l0w6kgZHUgUXXDqWJlYyDDoCBUcm9pcy1SaXZpw6hyZXM!5e0!3m2!1sfr!2sus!4v1605567136826!5m2!1sfr!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    </section>
+
+       
+
+        </div>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
